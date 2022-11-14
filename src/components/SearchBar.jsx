@@ -10,7 +10,7 @@ const SearchBar = () => {
       onSubmit={() => {}}
       sx={{
         borderRadius: 20,
-        border: "1px solid #e3e3e3",
+        border: "1px solid #bae6fd",
         pl: 2,
         boxShadow: "none",
         mr: {sm: 5}
