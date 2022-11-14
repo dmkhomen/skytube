@@ -1,14 +1,15 @@
 import { Stack, Box } from "@mui/system"
+import React from "react"
 import {VideoCard, ChannelCard} from "./"
 
 const Videos = ({videos}) => {
   return (
     <Stack direction="row" flexWrap="wrap" justifyContent="start" gap={2}>
       {videos.map((item, idx) => (
-        <Box key={idx}>
-          {item.id.videoId && <VideoCard video={item} />}
-          {item.id.channelId && <ChannelCard channelDetail={item} />}
-        </Box>
+        <React.Fragment key={idx}>
+            {item.id.videoId && <Box><VideoCard video={item} /></Box>}
+            {item.id.channelId && <Box><ChannelCard channelDetail={item} /></Box>}
+        </React.Fragment>
       ))}
     </Stack>
   )
