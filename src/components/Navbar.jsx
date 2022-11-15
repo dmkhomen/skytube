@@ -10,12 +10,12 @@ const Navbar = () => (
     <Stack
     p={2}
       alignItems="center"
-      direction={{ xs: "column", sm: "row"}}
-      sx={{position: "sticky", background: "#e0f2fe", top: 0, justifyContent: "space-between"}}
+      direction={{ xs: "column",sm: "row"}}
+      sx={{position: "sticky", background: "#e0f2fe", top: 0, justifyContent: "flex-start"}}
     >
       <Link to="/" style={{display: "flex", alignItems: "center"}} >
         <img src={logo} alt="logo" height={45}/>
-        <Typography variant="h5" ml="5px"><span style={{color: "#0284c7"}}>Sky</span>Tube</Typography>
+        <Typography variant="h5" ml="5px" mr="20px"><span style={{color: "#0284c7"}}>Sky</span>Tube</Typography>
       </Link>
       <SearchBar />
     </Stack>
