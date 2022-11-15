@@ -40,7 +40,8 @@ const VideoDetail = () => {
             </Typography>
             <Stack direction="row" justifyContent="space-between" sx={{}} py={1} px={2}>
               <Link to={`/channel/${channelId}`}>
-                <Typography variant={{sm: "subtitle1", md: "h6"}}>
+                {/* <Typography variant={{sm: "subtitle1", md: "h6"}}> */}
+                <Typography variant="h6">
                   {channelTitle}
                   <CheckCircle sx={{fontSize: "12px", color: "gray", ml: "5px"}}/>
                 </Typography>

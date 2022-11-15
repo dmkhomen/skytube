@@ -30,7 +30,7 @@ const ChannelDetail = () => {
     <Box minHeight="95vh">
       <Box>
         <div style={{ background: "linear-gradient(90deg, #f0f9ff 0%, #0284c7 100%)", zIndex: 10, height: "300px" }} />
-        <ChannelCard channelDetail={channelDetail} marginTop="-138px"/>
+        <ChannelCard channelDetail={channelDetail} marginTop="-128px"/>
       </Box>
       <Box display="flex" p="2">
         <Box sx={{mr: {sm: "100px"}}} />
